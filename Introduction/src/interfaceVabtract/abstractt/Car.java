@@ -1,4 +1,4 @@
-package interfaceVabtract;
+package interfaceVabtract.abstractt;
 
 class Car extends Vehicle {
     void move() {

@@ -1,4 +1,4 @@
-package interfaceVabtract;
+package interfaceVabtract.abstractt;
 /*
 Abstract Class:
 Định nghĩa: Abstract Class là một lớp trừu tượng có thể chứa cả phương thức có phần thân (đã triển khai) và phương thức trừu tượng (chưa triển khai).
@@ -9,7 +9,7 @@ Có thể có cả phương thức trừu tượng (abstract) và phương thứ
 Lớp con phải kế thừa (extend) Abstract Class và triển khai tất cả phương thức trừu tượng.
 Một lớp chỉ có thể kế thừa từ một Abstract Class (hạn chế đa kế thừa).
  */
-public class MainAbtract {
+public class Main {
     public static void main(String[] args) {
         Vehicle car = new Car();
         car.move();  // Output: Car is moving

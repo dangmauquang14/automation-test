@@ -1,4 +1,4 @@
-package intro;
+package corejava;
 
 public class MethodsDemo2 {
 	public String getUserdata() {

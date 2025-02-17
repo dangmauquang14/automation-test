@@ -1,4 +1,4 @@
-package file;
+package file.xml;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;

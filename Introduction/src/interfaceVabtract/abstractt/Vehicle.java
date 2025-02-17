@@ -1,4 +1,4 @@
-package interfaceVabtract;
+package interfaceVabtract.abstractt;
 
 public abstract class Vehicle {
 	abstract void move();  // Phương thức trừu tượng

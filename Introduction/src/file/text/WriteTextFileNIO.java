@@ -1,4 +1,4 @@
-package file;
+package file.text;
 
 import java.io.IOException;
 import java.nio.file.Files;

@@ -1,4 +1,4 @@
-package interfaceVabtract;
+package interfaceVabtract.interfacee;
 
 public class Dog implements Animal {
     public void sound() {
