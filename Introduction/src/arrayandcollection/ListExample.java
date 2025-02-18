@@ -13,13 +13,16 @@ Vector: Tương tự như ArrayList, nhưng với tính năng đồng bộ hóa 
 Stack: Một lớp con của Vector, mô phỏng hành vi ngăn xếp (LIFO - Last In, First Out).
  */
 public class ListExample {
-    public static void main(String[] args) {
-        List<String> fruits = new ArrayList<String>();
-        fruits.add("Apple");
-        fruits.add("Banana");
-        fruits.add("Apple");  // Cho phép phần tử trùng lặp
-        
-        // In ra các phần tử trong List
-        System.out.println(fruits);  // Output: [Apple, Banana, Apple]
-    }
+	public static void main(String[] args) {
+		List<String> fruits = new ArrayList<String>();
+		fruits.add("Apple");
+		fruits.add("Banana");
+		fruits.add("Apple"); // Cho phép phần tử trùng lặp
+
+		// In ra các phần tử trong List
+		System.out.println(fruits); // Output: [Apple, Banana, Apple]
+		
+		// Duyệt qua stream
+		fruits.forEach(System.out::println);
+	}
 }

@@ -4,7 +4,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 /*
-Đặc điểm: Cung cấp cách thức để duyệt qua các phần tử của Collection mà không cần phải biết chính xác cấu trúc bên trong của nó.
+Đặc điểm: Cung cấp cách thức để duyệt qua các phần tử của Collection mà không cần phải biết chính xác cấu trúc 
+bên trong của nó.
 Các phương thức của Iterator:
 hasNext(): Kiểm tra có phần tử tiếp theo hay không.
 next(): Trả về phần tử tiếp theo trong Collection.

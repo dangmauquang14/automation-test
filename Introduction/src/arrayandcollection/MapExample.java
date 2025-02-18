@@ -18,5 +18,23 @@ public class MapExample {
 
 		// Truy cập giá trị theo key
 		System.out.println(fruitColors.get("Apple")); // Output: Red
+
+		// Duyệt và in ra các phần tử trong Map
+		for (Map.Entry<String, String> entry : fruitColors.entrySet()) {
+			System.out.println("Key: " + entry.getKey() + ", Value: " + entry.getValue());
+		}
+
+		// Duyệt qua keys và lấy value bằng get()
+		for (String key : fruitColors.keySet()) {
+			System.out.println("Key: " + key + ", Value: " + fruitColors.get(key));
+		}
+
+		// Duyệt qua values
+		for (String value : fruitColors.values()) {
+			System.out.println("Value: " + value);
+		}
+
+		// Duyệt qua Stream
+		fruitColors.forEach((key, value) -> System.out.println("Key: " + key + ", Value: " + value));
 	}
 }
