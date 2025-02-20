@@ -3,10 +3,7 @@ package intro;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.safari.SafariDriver;
 
 public class SelIntroduction {
 
@@ -45,8 +42,8 @@ public class SelIntroduction {
 //        options.addArguments("--no-sandbox"); // Tắt sandboxing
 //        options.addArguments("--disable-web-security"); // Tắt bảo mật web
 //        options.addArguments("--allow-running-insecure-content"); // Cho phép chạy nội dung không an toàn
-
 		WebDriver driver = new FirefoxDriver();
+
 		
 		// Bắt đầu đếm thời gian
 		long startTime = System.nanoTime();

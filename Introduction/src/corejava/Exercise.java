@@ -1,4 +1,4 @@
-package intro;
+package corejava;
 
 public class Exercise {
 	public static void main(String[] args) {
