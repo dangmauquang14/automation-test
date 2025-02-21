@@ -19,7 +19,6 @@ public class Locators extends BaseTest {
 		long startTime = System.nanoTime();
 
 		WebDriver driver = new FirefoxDriver();
-		// Đợi overlay biến mất
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://rahulshettyacademy.com/locatorspractice/");
 		driver.findElement(By.id("inputUsername")).sendKeys("rahul");
@@ -32,14 +31,19 @@ public class Locators extends BaseTest {
 		driver.findElement(By.cssSelector("input[placeholder='Email']")).sendKeys("john@rsa.com");
 		driver.findElement(By.cssSelector("input[placeholder='Email']")).clear();
 		driver.findElement(By.xpath("(//input[@type='text'])[2]"));
-	    driver.findElement(By.cssSelector("input[type='text']:nth-child(3)")).sendKeys("john@gmail.com");
-	    driver.findElement(By.xpath("//form/input[3]")).sendKeys("9864353253");
-	    driver.findElement(By.cssSelector(".reset-pwd-btn")).click();
-	    System.out.println(driver.findElement(By.cssSelector("form p")).getText());
-	    driver.findElement(By.)
-	    
+		driver.findElement(By.cssSelector("input[type='text']:nth-child(3)")).sendKeys("john@gmail.com");
+		driver.findElement(By.xpath("//form/input[3]")).sendKeys("9864353253");
+		driver.findElement(By.cssSelector(".reset-pwd-btn")).click();
+		System.out.println(driver.findElement(By.cssSelector("form p")).getText());
+		driver.findElement(By.xpath("//div[@class='forgot-pwd-btn-conainer']/button[1]")).click();
+		driver.findElement(By.cssSelector("#inputUsername")).sendKeys("rahul");
+		driver.findElement(By.cssSelector("input[type*='pass']")).sendKeys("rahulshettyacademy");
+		Thread.sleep(1000);
+		driver.findElement(By.id("chkboxOne")).click();
+		driver.findElement(By.xpath("//button[contains(@class,'submit')]")).click();
+
 		long endTime = System.nanoTime();
 		double elapsedTimeInSeconds = (endTime - startTime) / 1_000_000_000.0;
 		System.out.println("Elapsed time: " + elapsedTimeInSeconds + " seconds");
-	}  
+	}
 }
