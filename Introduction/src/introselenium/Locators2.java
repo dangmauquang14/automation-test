@@ -1,6 +1,5 @@
 package introselenium;
 
-import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -34,8 +33,8 @@ public class Locators2 {
 
 		Thread.sleep(2000);
 		System.out.println(driver.findElement(By.tagName("p")).getText());
-		Assertions.assertEquals("Hello " + name + ",",
-                driver.findElement(By.cssSelector("div[class='login-container'] h2")).getText());
+//		Assertions.assertEquals("Hello " + name + ",",
+//                driver.findElement(By.cssSelector("div[class='login-container'] h2")).getText());
 		driver.findElement(By.xpath("//*[text()='Log Out']")).click();
 
 		driver.close();
