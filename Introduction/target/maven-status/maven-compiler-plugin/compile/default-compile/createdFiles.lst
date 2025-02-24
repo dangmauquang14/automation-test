@@ -4,6 +4,7 @@ oop/Encapsulation.class
 oop/Abstraction$CreditCardPayment.class
 oop/Polymorphism$Calculator.class
 oop/Encapsulation$User.class
+intro/WindowActivities.class
 file/xml/ReadXMLExample.class
 file/text/WriteTextFile.class
 oop/Abstraction.class
@@ -38,6 +39,7 @@ corejava/MethodsDemo2.class
 interfaceVabtract/abstractt/Vehicle.class
 corejava/CoreJava1.class
 arrayandcollection/ArrayExample.class
+intro/Locators3.class
 arrayandcollection/IteratorExample.class
 interfaceVabtract/interfacee/Dog.class
 oop/Polymorphism$BasePage.class

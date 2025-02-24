@@ -1,10 +1,10 @@
 package file.csv;
 
-import java.io.FileReader;
-import java.io.IOException;
-
 import com.opencsv.CSVReader;
 import com.opencsv.exceptions.CsvValidationException;
+
+import java.io.FileReader;
+import java.io.IOException;
 
 public class ReadCSVExample {
 	public static void main(String[] args) {
