@@ -12,11 +12,13 @@ public class UpdateDropdown {
 
         Thread.sleep(2000L);
 
-   /*int i=1;
-    while(i<5){
-        driver.findElement(By.id("hrefIncAdt")).click();
-        i++;
-    }*/
+       /*
+       int i=1;
+        while(i<5){
+            driver.findElement(By.id("hrefIncAdt")).click();
+            i++;
+        }
+        */
 
         System.out.println(driver.findElement(By.id("divpaxinfo")).getText());
 

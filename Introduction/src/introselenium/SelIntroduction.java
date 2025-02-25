@@ -1,7 +1,7 @@
 package introselenium;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 public class SelIntroduction {
 
@@ -28,7 +28,7 @@ public class SelIntroduction {
 		
 		// Safari
 //		WebDriver driver1 = new SafariDriver();
-		
+
 //		WebDriver driver2 = new EdgeDriver();
 //        ChromeOptions options = new ChromeOptions();
 //        options.addArguments("--headless"); // Chạy trình duyệt ở chế độ không đầu
@@ -40,9 +40,8 @@ public class SelIntroduction {
 //        options.addArguments("--no-sandbox"); // Tắt sandboxing
 //        options.addArguments("--disable-web-security"); // Tắt bảo mật web
 //        options.addArguments("--allow-running-insecure-content"); // Cho phép chạy nội dung không an toàn
-		WebDriver driver = new FirefoxDriver();
+		WebDriver driver = new ChromeDriver();
 
-		
 		// Bắt đầu đếm thời gian
 		long startTime = System.nanoTime();
 

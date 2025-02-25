@@ -10,10 +10,10 @@ import java.time.Duration;
 public class Locators extends BaseTest {
 
     public static void main(String[] args) throws InterruptedException {
-        // TODO Auto-generated method stub
-//		setUp();
-//		driver.manage().window().maximize();
-//		tearDown();
+//         TODO Auto-generated method stub
+//        		setUp();
+//        		driver.manage().window().maximize();
+//        		tearDown();
         long startTime = System.nanoTime();
 
         WebDriver driver = new FirefoxDriver();
