@@ -1,10 +1,9 @@
-package introselenium;
+package introselenium.locator;
 
 import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-
 import java.time.Duration;
 
 public class Locators2 {
@@ -35,7 +34,6 @@ public class Locators2 {
 		Assertions.assertEquals("Hello " + name + ",",
                 driver.findElement(By.cssSelector("div[class='login-container'] h2")).getText());
 		driver.findElement(By.xpath("//*[text()='Log Out']")).click();
-
 		driver.close();
 	}
 

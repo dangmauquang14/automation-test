@@ -1,9 +1,9 @@
-package introselenium;
+package introselenium.webelement;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 import java.util.List;
 
@@ -13,7 +13,7 @@ public class AutoSuggestive {
         System.setProperty("webdriver.chrome.driver", "C://chromedriver.exe");
 
         // Khởi tạo WebDriver
-        WebDriver driver = new ChromeDriver();
+        WebDriver driver = new FirefoxDriver();
         // Mở trang web
         driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
 

@@ -1,4 +1,4 @@
-package introselenium;
+package introselenium.locator;
 
 import org.openqa.selenium.By;
 

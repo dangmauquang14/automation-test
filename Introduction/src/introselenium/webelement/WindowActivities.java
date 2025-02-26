@@ -1,4 +1,4 @@
-package introselenium;
+package introselenium.webelement;
 
 
 import org.openqa.selenium.WebDriver;
