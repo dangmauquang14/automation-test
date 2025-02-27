@@ -22,6 +22,24 @@ public class UpdateDropdown {
         // Kiểm tra lại checkbox đã được chọn
         Assert.assertTrue(driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount']")).isSelected());
 
+        // Kiểm tra trạng thái ban đầu của phần tử "Div1"
+        System.out.println(driver.findElement(By.id("Div1")).getDomAttribute("style"));
+
+        // Click vào radio button có id "ctl00_mainContent_rbtnl_Trip_1"
+        driver.findElement(By.id("ctl00_mainContent_rbtnl_Trip_1")).click();
+
+        // Kiểm tra lại trạng thái của "Div1" sau khi click
+        System.out.println(driver.findElement(By.id("Div1")).getDomAttribute("style"));
+
+        // Kiểm tra xem phần tử "Div1" có chứa thuộc tính style có giá trị chứa "1" hay không
+        if (driver.findElement(By.id("Div1")).getDomAttribute("style").contains("1")) {
+            System.out.println("It's enabled");
+            Assert.assertTrue(true);  // Kiểm tra thành công, bài test sẽ pass
+        } else {
+            Assert.assertFalse(true); // Kiểm tra thất bại, bài test sẽ fail
+        }
+
+
         // Mở dropdown chọn số lượng hành khách
         driver.findElement(By.id("divpaxinfo")).click();
         Thread.sleep(2000);
